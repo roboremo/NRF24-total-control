@@ -26,3 +26,6 @@ You can select menu -> edit ui, and then click on any button and select "set pre
 | "read NN RR" | "read 05 0a", "read 01 05" | Read NN bytes from register RR. NN is the byte count to read, a 2-digit hex number, RR si the regidter address, a 2-digit hex number |
 | "bank 1"          |                            | Select bank 1 (for RFM73) |
 | "bank 0"          |                            | Select bank 0 (for RFM73) |
+
+This project, together with this: https://github.com/roboremo/NRF24-demodulator
+form a complete tool for debugging and demystifying some Chinese NRF24L01 clones :)
