@@ -1,5 +1,6 @@
 # NRF24-total-control
-NRF24L01+ (and clones) registers at your fingertips
+NRF24L01+ (and clones) registers at your fingertips  
+![roboremo_interface_screenshot](https://raw.githubusercontent.com/roboremo/NRF24-total-control/master/RoboRemo-interface-screenshot.png "RoboRemo interface screenshot")
 ## Working principle
 One or more NRF24L01+ (or clones) module is connected to the Arduino UNO using any 6 digital pins for each transceiver (I use software SPI, so any digital pin can be used)  
 The Arduino UNO is connected to a Galaxy Tab 4 using USB cable and OTG adapter  
