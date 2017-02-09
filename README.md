@@ -10,13 +10,20 @@ I created a RoboRemo interface with many buttons for configuring different regis
 You can easily add more buttons, according to your needs.
 You can select menu -> edit ui, and then click on any button and select "set press action" in order to view and/or modify the command associated with that button.  
 ## Available commands
+
+| Command           | Examples                   | Description  |
+| ----------------- | -------------------------- | ------------ |
+| "use pins [...]"  | "use pins 2 12 11 13 10 8" | Switch between the transceivers. Must provide exactly 6 pins (IRQ, MISO, MOSI, SCK, CSN, CE), separated by space. |
+| "spi init"        |                            | Initialize the software SPI pins |
+
+
 "use pins [IRQ] [MISO] [MOSI] [SCK] [CSN] [CE]" example: "use pins 2 12 11 13 10 8"  
 Switch between the transceivers  
   
-"spi init"
+"spi init"  
 Initialize the software SPI pins  
 
-"ce high"
+"ce high"  
 Switch CE pin to HIGH state  
   
 "ce low"  
@@ -34,7 +41,7 @@ Read bit b from the register XX.
 "write RR DD[...]" examples: "write 05 00", "write 1f cd3f7f9c20"  
 Write data to register. (RR is the register address, a 2-digit hex number, DD[...] is the data, even-digit hex number)
 
-"wrcmd CC DD[...]" examples: "wrcmd 50 73", "wrcmd b0 0000000000000000"
+"wrcmd CC DD[...]" examples: "wrcmd 50 73", "wrcmd b0 0000000000000000"  
 Write command. CC is the command number, a 2-digit hex number, DD[...] is the data, even-digit hex number  
 
 "read NN RR" examples: "read 05 0a", "read 01 05"  
