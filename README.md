@@ -7,7 +7,6 @@ One or more NRF24L01+ (or clones) module is connected to the Arduino UNO using a
 The Arduino UNO is connected to a Galaxy Tab 4 using USB cable and OTG adapter  
 The tablet runs RoboRemo app.  
 To connect, select menu -> connect -> USB -> 115200 -> OK  
-Note: please use original Arduino UNO, since RoboRemo does not support yet the ch340 usb chip found in Arduino clones.
 I created a RoboRemo interface with many buttons for configuring different registers of the NRF. When you press a button, the app sends a specific command to the Arduino, which controls the transceiver(s).
 You can easily add more buttons, according to your needs.
 You can select menu -> edit ui, and then click on any button and select "set press action" in order to view and/or modify the command associated with that button.  
